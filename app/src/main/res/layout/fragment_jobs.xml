@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="15dp"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.JobsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/drawer"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginStart="1dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/drawer" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="15dp"
+            android:src="@drawable/avatar" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:text="Find a soft gig for tuition"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/jobs_recycler_view"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent">
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>
